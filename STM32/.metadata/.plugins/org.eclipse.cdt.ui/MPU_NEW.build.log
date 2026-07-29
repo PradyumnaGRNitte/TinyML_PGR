@@ -1,0 +1,10 @@
+14:09:34 **** Incremental Build of configuration Debug for project MPU_NEW ****
+make -j16 all 
+arm-none-eabi-size  MPU_NEW.elf 
+   text	   data	    bss	    dec	    hex	filename
+  40732	    468	   2180	  43380	   a974	MPU_NEW.elf
+Finished building: default.size.stdout
+ 
+
+14:09:34 Build Finished. 0 errors, 0 warnings. (took 284ms)
+

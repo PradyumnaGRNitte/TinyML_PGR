@@ -1,23 +1,28 @@
-10:49:36 **** Incremental Build of configuration Debug for project BH1750 ****
+14:09:24 **** Incremental Build of configuration Debug for project MPU_NEW ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4S5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stm32l4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4S5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_hal_msp.d" -MT"Core/Src/stm32l4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_hal_msp.o"
-arm-none-eabi-gcc "../Core/Src/stm32l4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4S5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l4xx_it.d" -MT"Core/Src/stm32l4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_it.o"
-arm-none-eabi-gcc -o "BH1750.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TinyML_Workshop-main\TinyML_Workshop_PGR\TinyML_PGR\STM32\BH1750\STM32L4S5VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BH1750.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: BH1750.elf
+../Core/Src/main.c:300:1: warning: "/*" within comment [-Wcomment]
+  300 | /* USER CODE END 4 */
+      |  
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:298:1: warning: control reaches end of non-void function [-Wreturn-type]
+  298 | }
+      | ^
+arm-none-eabi-gcc -o "MPU_NEW.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TinyML_Workshop-main\TinyML_Workshop_PGR\TinyML_PGR\STM32\MPU_NEW\STM32L4S5VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU_NEW.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MPU_NEW.elf
  
-arm-none-eabi-size  BH1750.elf 
-arm-none-eabi-objdump -h -S BH1750.elf  > "BH1750.list"
+arm-none-eabi-size  MPU_NEW.elf 
+arm-none-eabi-objdump -h -S MPU_NEW.elf  > "MPU_NEW.list"
    text	   data	    bss	    dec	    hex	filename
-  40540	    468	   2148	  43156	   a894	BH1750.elf
+  40732	    468	   2180	  43380	   a974	MPU_NEW.elf
 Finished building: default.size.stdout
  
-Finished building: BH1750.list
+Finished building: MPU_NEW.list
  
-11:25:15 **** Incremental Build of configuration Debug for project BH1750 ****
+14:09:34 **** Incremental Build of configuration Debug for project MPU_NEW ****
 make -j16 all 
-arm-none-eabi-size  BH1750.elf 
+arm-none-eabi-size  MPU_NEW.elf 
    text	   data	    bss	    dec	    hex	filename
-  40540	    468	   2148	  43156	   a894	BH1750.elf
+  40732	    468	   2180	  43380	   a974	MPU_NEW.elf
 Finished building: default.size.stdout
  

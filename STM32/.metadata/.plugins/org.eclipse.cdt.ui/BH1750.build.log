@@ -1,0 +1,10 @@
+11:25:15 **** Incremental Build of configuration Debug for project BH1750 ****
+make -j16 all 
+arm-none-eabi-size  BH1750.elf 
+   text	   data	    bss	    dec	    hex	filename
+  40540	    468	   2148	  43156	   a894	BH1750.elf
+Finished building: default.size.stdout
+ 
+
+11:25:16 Build Finished. 0 errors, 0 warnings. (took 1s.96ms)
+

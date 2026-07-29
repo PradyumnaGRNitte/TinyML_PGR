@@ -1,0 +1,14 @@
+15:50:26 **** Incremental Build of configuration Debug for project Uart ****
+make -j16 all 
+arm-none-eabi-size  Uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16764	    104	   2056	  18924	   49ec	Uart.elf
+Finished building: default.size.stdout
+ 
+15:50:32 **** Incremental Build of configuration Debug for project Uart ****
+make -j16 all 
+arm-none-eabi-size  Uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16764	    104	   2056	  18924	   49ec	Uart.elf
+Finished building: default.size.stdout
+ 

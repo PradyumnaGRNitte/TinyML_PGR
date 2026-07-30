@@ -13,7 +13,7 @@ label = input("Enter Activity Label (Idle/Pitch/Roll/Yaw/Shake): ").strip()
 num_samples = int(input("Enter Number of Samples to Record: "))
 
 baudrate = 115200
-filename = "dataset.csv"
+filename = r"D:\TinyML_Workshop-main\TinyML_Workshop_PGR\TinyML_PGR\Data_Logger\dataset.csv"
 
 # ==========================
 # Open Serial Port

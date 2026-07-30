@@ -1,28 +1,20 @@
-14:09:24 **** Incremental Build of configuration Debug for project MPU_NEW ****
+09:42:41 **** Incremental Build of configuration Debug for project OnBoardIMU ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4S5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c:300:1: warning: "/*" within comment [-Wcomment]
-  300 | /* USER CODE END 4 */
-      |  
-../Core/Src/main.c: In function '_write':
-../Core/Src/main.c:298:1: warning: control reaches end of non-void function [-Wreturn-type]
-  298 | }
-      | ^
-arm-none-eabi-gcc -o "MPU_NEW.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TinyML_Workshop-main\TinyML_Workshop_PGR\TinyML_PGR\STM32\MPU_NEW\STM32L4S5VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MPU_NEW.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: MPU_NEW.elf
+arm-none-eabi-gcc -o "OnBoardIMU.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\TinyML_Workshop-main\TinyML_Workshop_PGR\TinyML_PGR\STM32\OnBoardIMU\STM32L4S5VITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OnBoardIMU.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OnBoardIMU.elf
  
-arm-none-eabi-size  MPU_NEW.elf 
-arm-none-eabi-objdump -h -S MPU_NEW.elf  > "MPU_NEW.list"
+arm-none-eabi-size  OnBoardIMU.elf 
+arm-none-eabi-objdump -h -S OnBoardIMU.elf  > "OnBoardIMU.list"
    text	   data	    bss	    dec	    hex	filename
-  40732	    468	   2180	  43380	   a974	MPU_NEW.elf
+  41828	    468	   2156	  44452	   ada4	OnBoardIMU.elf
 Finished building: default.size.stdout
  
-Finished building: MPU_NEW.list
+Finished building: OnBoardIMU.list
  
-14:09:34 **** Incremental Build of configuration Debug for project MPU_NEW ****
+09:44:32 **** Incremental Build of configuration Debug for project OnBoardIMU ****
 make -j16 all 
-arm-none-eabi-size  MPU_NEW.elf 
+arm-none-eabi-size  OnBoardIMU.elf 
    text	   data	    bss	    dec	    hex	filename
-  40732	    468	   2180	  43380	   a974	MPU_NEW.elf
+  41828	    468	   2156	  44452	   ada4	OnBoardIMU.elf
 Finished building: default.size.stdout
  

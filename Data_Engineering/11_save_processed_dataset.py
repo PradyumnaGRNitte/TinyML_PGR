@@ -5,7 +5,7 @@ from sklearn.preprocessing import MinMaxScaler, LabelEncoder
 # Load dataset
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 input_path = os.path.join(base_dir, "Data_Logger", "dataset.csv")
-output_path = os.path.join(base_dir, "Datasets", "dataset_processed.csv")
+output_path = os.path.join(base_dir, "Datasets", "D:\TinyML_Workshop-main\TinyML_Workshop_PGR\TinyML_PGR\Datasets\dataset_processed.csv")
 
 df = pd.read_csv(input_path)
 
